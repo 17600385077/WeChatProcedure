@@ -1,0 +1,35 @@
+/* 名字头像 */
+.one{width: 80%;height: 200rpx;margin-left: 10%;display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #EFEEF4;}
+.infor_img{width: 120rpx;height: 120rpx;border-radius: 50%;}
+.addressName{width: 300rpx;text-align: right;}
+/* 手机号 */
+.two{width: 80%;height: 100rpx;margin-left: 10%;display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #EFEEF4;}
+/* 微信号 */
+.ten{width: 80%;height: 100rpx;margin-left: 10%;display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #EFEEF4;}
+.addressMobile{width: 300rpx;text-align: right;}
+.myWeChat{width: 300rpx;text-align: right;}
+/* 性别 */
+.three{width: 80%;height: 100rpx;margin-left: 10%;display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #EFEEF4;}
+.sex_box{width: 400rpx;height: 80rpx;display: flex;align-items: center;justify-content: space-around;}
+.sex_con{width: 170rpx;height: 60rpx;border: 1rpx solid #B5B5B5;border-radius: 38rpx;text-align: center;line-height: 60rpx;}
+/* 是否就业 */
+.four{width: 80%;height: 100rpx;margin-left: 10%;display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #EFEEF4;}
+.job_box{width: 400rpx;height: 80rpx;display: flex;align-items: center;justify-content: space-around;}
+.job_con{width: 170rpx;height: 60rpx;border: 1rpx solid #B5B5B5;border-radius: 38rpx;text-align: center;line-height: 60rpx;}
+/* 年份 */
+.five{width: 80%;height: 100rpx;margin-left: 10%;display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #EFEEF4;}
+.years{width: 170rpx;height: 60rpx;border: 4rpx solid #6089f2;border-radius: 38rpx;text-align: center;line-height: 60rpx;color: #6089f2;}
+/* 所在公司 */
+.six{width: 80%;height: 100rpx;margin-left: 10%;display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #EFEEF4; }
+.companyName{width: 300rpx;text-align: right;}
+/* 任职职位 */
+.seven{width: 80%;height: 100rpx;margin-left: 10%;display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #EFEEF4; }
+.workName{width: 300rpx;text-align: right;}
+/* 省份 */
+.eight{width: 80%;height: 100rpx;margin-left: 10%;display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #EFEEF4;}
+.city{width: auto;height: 60rpx;border: 4rpx solid #6089f2;border-radius: 38rpx;text-align: center;line-height: 60rpx;color: #6089f2;padding-left: 20rpx;padding-right: 20rpx;}
+/* 资源和帮助 */
+.nine{width: 80%;height: 150rpx;margin-left: 10%;display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #EFEEF4;}
+/* 底部按钮 */
+.btn_box{width: 100%;height: 100rpx;margin-top: 80rpx;display: flex;align-items: center;justify-content: center;}
+.Btn{width: 40%;height: 80rpx;line-height: 80rpx;text-align: center;color: white;background: #6089f2;border-radius: 35rpx;}

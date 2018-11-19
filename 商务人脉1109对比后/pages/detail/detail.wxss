@@ -1,0 +1,26 @@
+/* 顶部卡片后背景 */
+.top_bg{width: 100%;height: 300rpx;background: #AFC4F9;}
+/* 整个名片 */
+.card_box{width: 90%;height: 600rpx;border: 1rpx solid #AFC4F9;border-radius: 25rpx;background: white;position: absolute;top: 50rpx;left: 5%;display: flex;flex-direction: column;justify-content: space-around;}
+.top_box{width: 100%;height: 150rpx;display: flex;flex-direction: row;justify-content: space-around;align-items: center;}
+.his_img{width: 120rpx;height: 120rpx;border: 1rpx solid #6089f2;border-radius: 50%;}
+.name_box{width: 65%;height: 120rpx;display: flex;flex-direction: column;justify-content: space-around;}
+.bottom_box{width: 100%;height: 400rpx;display: flex;flex-direction: column;justify-content: space-around;}
+.ever_box{width: 90%;margin-left: 5%;height: auto;display: flex;justify-content: space-between;}
+.small_font{color: #8F8F8F;font-size: 29rpx;}
+.big_font{width: 70%;color: #5C6164;font-size: 33rpx;}
+/* 技能栏 */
+.skill_top{width: 100%;height: 100rpx;display: flex;align-items: center;margin-top: 350rpx;}
+.blue{width: 20rpx;height: 50rpx;background: #6089f2;margin-left: 30rpx;margin-right: 20rpx;border-radius: 25rpx; }
+.skill_box{width: 90%;margin-left: 5%;height: 300rpx;}
+/* 标签点赞 */
+.oth_skill{width: 300rpx;height: 60rpx;border: 5rpx solid #6089f2;color: #6089f2;border-radius: 45rpx;text-align: center;font-size: 32rpx;font-weight: 600;margin-left: 25rpx;margin-bottom: 20rpx;display: flex;justify-content: center;align-items: center;}
+.scroll{display: flex;flex-wrap: wrap;}
+.endorse{width: 35rpx;height: 35rpx;margin-left: 10rpx;margin-right: 10rpx;}
+/* 点赞盒子 */
+.scroll_box{height: 100%;display: flex;justify-content: space-around;flex-wrap: wrap;}
+/* 底部按钮 */
+.but_box{width: 100%;height: 100rpx;background: white;position: absolute;bottom: 0rpx;display: flex;}
+.but_one{width: 50%;height: 100rpx;text-align: center;line-height: 100rpx;color: white;background: #6089f2;border-radius: 0rpx;display: flex;align-items: center;justify-content: space-around;}
+.but_two{width: 50%;height: 100rpx;text-align: center;line-height: 100rpx;color: #6089f2;background: white;border-radius: 0rpx;border-top: 1rpx solid #EEEEEE;}
+button::after{border: none;}

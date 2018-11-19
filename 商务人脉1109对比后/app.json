@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/collect/collect",
+    "pages/my/my",
+    "pages/memberList/memberList",
+    "pages/add/add",
+    "pages/card/card",
+    "pages/detail/detail",
+    "pages/write/write",
+    "pages/property/property",
+    "pages/change/change"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#BDC8D7",
+    "selectedColor": "#6089f2",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "#d7d7d7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "人脉圈",
+        "iconPath": "/images/circle_.png",
+        "selectedIconPath": "/images/circle.png"
+      },
+      {
+        "pagePath": "pages/collect/collect",
+        "text": "收 藏",
+        "iconPath": "/images/collect_.png",
+        "selectedIconPath": "/images/collect.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我 的",
+        "iconPath": "/images/my_.png",
+        "selectedIconPath": "/images/my.png"
+      }
+    ]
+  }
+}

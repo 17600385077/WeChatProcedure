@@ -1,0 +1,73 @@
+<view>
+  <view class='inforFrom'>
+    <form report-submit="true" bindsubmit="formSubmit" bindreset="formReset">
+      <input hidden='true' id='{{id}}'></input>
+      <view class='one'>
+        <image src='../../images/icon.png' class='infor_img'></image>
+        <input placeholder="请输入您的真实姓名" placeholder-class="placeholderStyle" class='addressName' name="inputName" type='text' bindinput="name" value='{{receiverName}}'></input>
+      </view>
+      <view class='ten'>
+        <view>微信号</view>
+        <!-- <input placeholder="联系微信号" placeholder-class="placeholderStyle" class='myWeChat' name="inputWeChat" type='text' value='{{receiverWeChat}}'></input> -->
+        <input placeholder="联系微信号" placeholder-class="placeholderStyle" class='myWeChat' name="myWeChat" type='text' value='{{myWeChat}}'></input>
+      </view>
+      <view class='two'>
+        <view>手机号</view>
+        <input placeholder="联系手机号" placeholder-class="placeholderStyle" class='addressMobile' name="inputMobile" type='number' maxlength="11" value='{{receiverMobile}}'></input>
+      </view>
+      <view class='three'>
+        <view>性别</view>
+        <view class='sex_box'>
+          <block wx:for="{{sex}}" wx:key="">
+            <view class="sex_con" bindtap='chooes_sex' name='sex' data-id="{{item.id}}" style="{{item.id == sex_id?'background:#5F89F1':'background:white'}}">
+              <text style="{{item.id == sex_id?'color:white':'color:#B5B5B5'}}">{{item.people}}</text>
+            </view>
+          </block>
+        </view>
+      </view>
+      <view class='four'>
+        <view>就业</view>
+        <view class='job_box'>
+          <block wx:for="{{job}}" wx:key="">
+            <view class="job_con" bindtap='chooes_job' data-id="{{item.id}}" style="{{item.id == job_id?'background:#5F89F1':'background:white'}}">
+              <text style="{{item.id == job_id?'color:white':'color:#B5B5B5'}}">{{item.yes}}</text>
+            </view>
+          </block>
+        </view>
+      </view>
+      <view class='five'>
+        <view>就业年份</view>
+        <view class='years'>
+          <picker mode="date" value="{{date}}" name='dateName' start="1990" end="2018" bindchange="bindDateChange" fields='year'>
+            <view class="picker">
+              {{date}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class='six'>
+        <view>所在公司</view>
+        <input placeholder="输入公司名称" placeholder-class="placeholderStyle" class='companyName' name="companyName" type='text' value='{{companyName}}'></input>
+      </view>
+      <view class='seven'>
+        <view>任职职位</view>
+        <input placeholder="输入任职职位" placeholder-class="placeholderStyle" class='workName' name="workName" type='text' value='{{workName}}'></input>
+      </view>
+      <view class='eight'>
+        <view>所在城市</view>
+        <view class='city'>
+          <picker mode="region" bindchange="bindRegionChange" name='regionName' value="{{region}}" custom-item="{{customItem}}">
+            <view class="picker">{{region[0]}},{{region[1]}},{{region[2]}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class='nine'>
+        <view>我能提供的帮助</view>
+        <textarea bindblur="bindTextAreaBlur" auto-height placeholder="可提供的帮助/资源（最多30字）" maxlength="30" style='width:300rpx;min-height: 100rpx;' name='helpName' value='{{help}}'/>
+      </view>
+      <view class='btn_box'>
+        <button formType="submit" class='Btn'>确定</button>
+      </view>
+    </form>
+  </view>
+</view>

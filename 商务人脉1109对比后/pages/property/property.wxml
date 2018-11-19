@@ -1,0 +1,47 @@
+<view wx:if="{{auth}}" class='content'>
+  <view class='login-header'>
+    <view class='header-section'>
+      <image class='loginImg' mode='widthFix' src='../../images/iconImg.png'></image>
+      <text class='loginText'>人脉通</text>
+    </view>
+  </view>
+  <view class='login-center'>
+    <text class='centerText1'>登录后开发者将获取以下权限</text>
+    <text class='centerText2'>获取您的公开信息（昵称、头像等）</text>
+  </view>
+  <button class='btn-reset login-btn' open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo" >确认登录</button>
+</view>
+
+<view wx:if="{{!auth}}" >
+  <!-- 遮罩层 -->
+   <view class='shade' wx:if="{{load==1}}">
+   <image class='shade-img' src="../../images/loading.png"></image>
+  </view>  
+  <!-- 遮罩层 -->
+  <view class='login-headers'>
+    <view class='header-section'>
+      <image class='loginImg' mode='widthFix' src='../../images/icon.png'></image>
+      <text class='loginText'>小区抽奖</text>
+    </view>
+  </view>
+  <view class='login-centers'>
+    <form report-submit="true" bindsubmit="formSubmit" bindreset="formReset" >
+        <view class="section_title">
+           我的位置 <text class='adress'>(已在小区范围内)</text> 
+        </view>
+        <view class="section_title">
+              <view>当前小区：</view>
+              <view class='priok_listlil'>
+                <image src='../../images/adress.png'></image>
+              </view>
+              <view class='house'>{{adds.name}}</view> 
+        </view>
+        <input name="houseId" hidden='true' value="{{adds.id}}" />
+
+       <view class="public_footer"> 
+          <button formType="submit" class='btn-reset buttadd'>绑定小区</button>   
+       </view> 
+
+    </form>
+  </view>
+</view>

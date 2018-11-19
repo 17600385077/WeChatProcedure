@@ -1,0 +1,44 @@
+<view>
+  <view class='black_overlay' wx:if="{{outerState}}">
+    <!-- 授权框 -->
+    <view class='accreditBox' wx:if="{{accredit}}">
+      <view class='topBox'>
+        <view class='textOne'>商务人脉小程序请求授权</view>
+        <view class='imgBox'>
+          <image src='../../images/iconImg.png' class='iconImg'></image>
+        </view>
+        <view class='textTwo'>
+          商务人脉申请获得以下权限
+        </view>
+        <view class='textThree'>
+          获取你的公开信息（昵称、头像）
+        </view>
+      </view>
+      <view class='btnBox'>
+        <button class='btn-reset login-btn' open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo">登录授权</button>
+      </view>
+    </view>
+    <!-- 授权框 -->
+  </view>
+  <!-- 群列表 -->
+  <view class='top_title'>温馨提示：如果该群未命名，则显示空白或未命名群聊～</view>
+  <view class='group_list' hidden='{{group_info}}'>
+    <block wx:for='{{group_gid}}' wx:key=''>
+      <view bindtap='go_memberList' class='go_memberList' data-id='{{item.openGid}}'>
+        <view class='blue_dian'></view><open-data type="groupName" open-gid="{{item.openGid}}"></open-data>
+      </view>
+    </block>
+  </view>
+  <!-- 无群列表 -->
+  <view class='no_group' hidden='{{no_group}}'>
+    <image src='../../images/no_bg.png' class='no_bg'></image>
+    <text style='color: #939393;margin-top: 20rpx;'>暂无群信息</text>
+  </view>
+
+  <!-- 底部转发按钮 -->
+  <view class='but_box'>
+    <button class='circle_but' open-type='share' hidden='{{no_infor}}'>
+      转发到微信群，查看群内小伙伴信息
+    </button>
+  </view>
+</view>

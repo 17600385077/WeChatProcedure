@@ -1,0 +1,15 @@
+<!--pages/card/card.wxml-->
+<view class='grayBox'></view>
+<view class='public_box'>
+    <view class='topBox'>
+        <text class='topText'>您已正式加入商务人脉~</text>
+    </view>
+    <view class='centerBox'>
+        <view class='imageBox'>
+            <image src='{{imgUrl}}' bindtap="previewImage" class='imageStyle'></image>
+        </view>
+        <view class='saveBox'>
+            <text class='saveText'>- 点击预览，长按可保存您的名片 -</text>
+        </view>
+    </view>
+</view>

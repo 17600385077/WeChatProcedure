@@ -1,0 +1,79 @@
+<view class='black_overlay' wx:if="{{outerState}}">
+    <!-- 授权框 -->
+    <view class='accreditBox' wx:if="{{accredit}}">
+        <view class='topBox'>
+            <view class='textOne'>商务人脉小程序请求授权</view>
+            <view class='imgBox'>
+                <image src='../../images/iconImg.png' class='iconImg'></image>
+            </view>
+            <view class='textTwo'>
+                商务人脉申请获得以下权限
+            </view>
+            <view class='textThree'>
+                获取你的公开信息（昵称、头像）
+            </view>
+        </view>
+        <view class='btnBox'>
+            <button class='btn-reset login-btn' open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo">登录授权</button>
+        </view>
+    </view>
+    <!-- 授权框 -->
+
+</view>
+
+<view class='big_page'>
+  <!-- 顶部类型选择 数量 -->
+  <view class='top_choose'>
+    <view class='top_box'>
+      <view bindtap='selective_type' style='color:#6089f2;font-size:32rpx;'>
+        {{now_type}}
+        <image src='../../images/triangle.png' style='width:15rpx;height:15rpx;'></image>
+      </view>
+      <view style='font-size:32rpx;'>共
+        <text style='color:#6089f2;'>{{collect_num}}</text>个</view>
+    </view>
+  </view>
+  <view class='infor_list'>
+    <!-- 有信息（信息列表） -->
+    <scroll-view scroll-y style='height:100%;' hidden='{{infor_list}}'>
+      <block wx:for='{{partner_list}}' wx:key=''>
+        <view class='partner_infor' bindtap='go_detail' data-id="{{item.user_id}}">
+          <view class='infor_img'>
+            <image src='{{item.avatar_url}}' class='partner_img'></image>
+          </view>
+          <view class='partner_name'>
+            <view>{{item.user_name}}</view>
+            <view class='small'>{{item.company_name}}</view>
+          </view>
+          <view class='partner_post'>
+            <view>{{item.take_office}}</view>
+            <view class='small'>{{item.jobYear}}年经验</view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+    <!-- 顶部无数据 -->
+    <view class='no_infor' hidden='{{no_infor}}'>
+      <image src='../../images/no_bg.png' class='no_bg'></image>
+      <text style='color: #939393;margin-top: 20rpx;'>暂无群成员信息</text>
+    </view>
+  </view>
+  
+
+  <!-- 类型选择遮罩 -->
+  <view class='type_shade' hidden='{{type_shade}}'>
+    <view class='type_box'>
+      <view class='close_shade' bindtap='close_shade'>×</view>
+      <view class='type_box_top'>
+        选择技能分类
+      </view>
+      <view class='type_con'>
+        <block wx:for="{{type}}" wx:key="">
+          <view class='type_title' bindtap='click_choose' data-id="{{item.id}}" style="{{item.id == id?'border-color:#6089f2':'border-color:#A6A3A3'}}">
+            <text style="{{item.id == id?'color:#6089f2':'color:#A6A3A3'}}">{{item.title}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<view style='min-height:100%;'>
+  <view class='top_title'>
+    选择您的技能标签，我们将为您寻找小伙伴~
+  </view>
+  <view class='skill_top'>
+        <view class='blue'></view>
+        <view>我擅长的技能</view>
+      </view>
+  <view class='skill_box'>
+    <block wx:for='{{skill_list}}' wx:key=''>
+      <view class='skill' bindtap='click_choose' data-index="{{index}}" style="{{item.isSelected==1?'border-color:#6089f2':'border-color:#A6A3A3'}}">
+      <text style="{{item.isSelected==1?'color:#6089f2':'color:#A6A3A3'}}">{{item.skill_name}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='bot_box'>
+    <button class='bot_but' bindtap='go_my'>确认</button>
+  </view>
+</view>

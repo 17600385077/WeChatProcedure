@@ -1,0 +1,14 @@
+<view class='change_infor' bindtap='change_infor'>
+  <view class='change_box'>
+    <image src='../../images/change_infor.png' class='img_one'></image>
+    <view class='con'>修改名片信息</view>
+    <image src='../../images/go_change.png' class='img_one'></image>
+  </view>
+</view>
+<view class='change_skill'>
+  <view class='change_box' bindtap='change_skill'>
+    <image src='../../images/change_skill.png' class='img_one'></image>
+    <view class='con'>修改技能标签</view>
+    <image src='../../images/go_change.png' class='img_one'></image>
+  </view>
+</view>

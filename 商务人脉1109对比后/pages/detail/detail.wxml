@@ -1,0 +1,78 @@
+<view>
+  <!-- 名片背景 -->
+  <view class='top_bg'></view>
+  <!-- 名片 -->
+  <view class='card_box'>
+    <view class='top_box'>
+      <image src='{{head_img}}' class='his_img'></image>
+      <view class='name_box'>
+        <view class='his_infor'>{{name}}</view>
+        <view class='small_font'>微信昵称： {{nickname}}</view>
+      </view>
+    </view>
+    <view class='bottom_box'>
+    <view class='ever_box'>
+        <view class='small_font'>手机号码</view>
+        <view class='big_font'>{{phone}}</view>
+      </view>
+      <view class='ever_box'>
+        <view class='small_font'>我的微信</view>
+        <view class='big_font'>{{myWeChat}}</view>
+      </view>
+      <!-- <view class='ever_box'>
+        <view class='small_font'>所在社群</view>
+        <view class='big_font'>{{group}}</view>
+      </view> -->
+      <view class='ever_box'>
+        <view class='small_font'>所在公司</view>
+        <view class='big_font'>{{company}}</view>
+      </view>
+      <view class='ever_box'>
+        <view class='small_font'>所任职位</view>
+        <view class='big_font'>{{work}}</view>
+      </view>
+      <view class='ever_box'>
+        <view class='small_font'>工作年限</view>
+        <view class='big_font'>{{time}}</view>
+      </view>
+      <view class='ever_box'>
+        <view class='small_font'>所在城市</view>
+        <view class='big_font'>{{city}}</view>
+      </view>
+      <view class='ever_box'>
+        <view class='small_font'>我能够提供</view>
+        <view class='big_font'>{{help}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 技能栏 -->
+  <view class='skill_top'>
+    <view class='blue'></view>
+    <view>技能标签
+      <text style='color:#9A9A9A;font-size:30rpx;'>(请在合适我的标签下点个赞吧~)</text> </view>
+  </view>
+  <view class='skill_box'>
+    <scroll-view scroll-y class='scroll_box'>
+    <view class='scroll'>
+      <block wx:for='{{all_skill_list}}' wx:key=''>
+        <view class='oth_skill' bindtap='add_endorse' data-id='{{item.skill_id}}' style='{{item.support_num >=1?"background: #4788FC":"background: white"}}' data-index='{{index}}'>
+          <text style='{{item.support_num >=1?"color: white":"color: #6089f2"}}'>{{item.skill_name}}</text>
+          <image src='../../images/ok_endorse.png' class='endorse' hidden='{{item.support_num >=1?true:false}}'></image>
+          <image src='../../images/endorse.png' class='endorse' hidden='{{item.support_num >=1?false:true}}'></image>
+          <text style='{{item.support_num >=1?"color: white":"color: #6089f2"}}'>{{item.support_num}}</text>
+        </view>
+      </block>
+    </view>
+    </scroll-view>
+  </view>
+
+  <!-- 底部按钮 -->
+  <view class='but_box'>
+    <button class='but_one' bindtap='{{collect}}'>
+      <image src='../../images/star.png' style='width:45rpx;height:45rpx;' hidden='{{no_collect_}}'></image>
+      <image src='../../images/ok_collect_.png' style='width:45rpx;height:45rpx;' hidden='{{ok_collect_}}'></image>
+      收藏他的名片
+    </button>
+    <button class='but_two' bindtap='go_circle'>认识更多小伙伴</button>
+  </view>
+</view>

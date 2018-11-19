@@ -1,0 +1,29 @@
+/* 顶部提示 */
+.top_title{width: 100%;height: 80rpx;line-height: 80rpx;font-size: 26rpx;text-align: center;background: #D0D0D0;color: white;}
+/* 群列表 */
+.group_list{width: 100%;height: auto;border-top: 15rpx solid #f1f0f5;margin-bottom: 160rpx;}
+.go_memberList{width: 90%;margin-left: 5%;height: 110rpx;border-bottom: 1rpx solid #dcdcdc;line-height: 110rpx;color: #595858;font-size: 37rpx;
+font-family: "Times New Roman",Georgia,Serif;font-weight: 600;display: flex;align-items: center;}
+.blue_dian{width: 25rpx;height: 25rpx;background: #6089f2;border-radius: 50%;margin-right: 35rpx;}
+/* 圈子无信息数据 */
+.no_group {width: 100%;height: 900rpx;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.no_bg{width: 380rpx;height: 350rpx;}
+
+
+/* 底部分享按钮 */
+.but_box{width: 100%;height: 150rpx;background: white;position: fixed;bottom: 0rpx;display: flex;align-items: center;}
+.circle_but {height: 90rpx;width: 90%;line-height: 90rpx;margin-left: 5%;text-align: center;background: #6089f2;border-radius: 15rpx;color: white;}
+
+/*弹框*/
+.black_overlay {position: fixed;top: 0;left:0;width: 100%;height: 100%;background-color:rgba(0, 0, 0, 0.5);z-index: 15} 
+/* 授权框 */
+.accreditBox{width: 550rpx;height: 460rpx;position: absolute;top: 50%;margin-top: -250rpx;left: 50%;margin-left: -270rpx;z-index: 666;background: #fff;border-radius: 25rpx;}
+.topBox{height: 360rpx;width:550rpx;margin-bottom: 3rpx}
+.btnBox{height: 100rpx;width:550rpx;}
+.textOne{height: 110rpx;text-align:center;line-height: 110rpx;font-size: 34rpx;}
+.imgBox{height: 120rpx;width: 100%;display: flex;justify-content: center;justify-items: center;}
+.iconImg{width: 120rpx;height: 120rpx;border-radius: 50%}
+.textTwo{width: 100%;height: 60rpx;text-align:center;line-height: 60rpx;font-size: 28rpx;}
+.textThree{width: 100%;height: 60rpx;text-align:center;line-height: 60rpx;font-size: 27rpx;color: #686868}
+
+.login-btn{width: 100%;height: 100rpx;margin: 0 auto;background: #6089f2;display: flex;justify-content: center;justify-items: center;color: #ffffff;font-size: 35rpx;border-bottom-left-radius: 25rpx;border-bottom-right-radius: 25rpx;border-top-right-radius: 0rpx;border-top-left-radius: 0rpx;}

@@ -1,0 +1,42 @@
+/* 顶部打招呼 */
+.top_title{width: 80%;height: 150rpx;line-height: 150rpx;margin-left: 10%;}
+/* 填写信息图片 */
+.write{width: 80%;height: 220rpx;margin-left: 10%;border-radius: 25rpx;border: 5rpx solid #6089f2; color: #6089f2;}
+.box{height: 100%;width: 92%;margin-left: 4%;display: flex;flex-direction: column;justify-content: space-around;}
+.line_one{font-size:45rpx;display: flex;justify-content: space-between;align-items: center;}
+.line_two{font-size:34rpx;}
+.line_three{font-size:29rpx;font-weight: 600;}
+/* 已填写名片背景 */
+.my_bg{width:100%;height: 400rpx;background: #AFC4F9;}
+/* 信息栏 */
+.my_infor{width: 100%;height: 450rpx;background: url(https://naserviceoss.oss-cn-beijing.aliyuncs.com/businessCard/my_bg.png) no-repeat;background-size: 100% 100%;position: absolute;top: 100rpx;}
+.card_box{width: 90%;height: 400rpx;margin-left: 7.5%;display: flex;flex-direction: row;justify-content: space-between;align-items: center;}
+.my_img{width: 120rpx;height: 65%;}
+.my_data{width: 50%;height: 87%;color: white;font-size: 28rpx;display: flex;flex-direction: column;justify-content: space-around;}
+.compile{width: 160rpx;height: 55%;display: flex;align-items: center;}
+/* 技能标签 */
+.skill_top{width: 100%;height: 100rpx;display: flex;align-items: center;}
+.blue{width: 20rpx;height: 50rpx;background: #6089f2;margin-left: 30rpx;margin-right: 20rpx;border-radius: 25rpx; }
+.skill_box{width: 90%;margin-left: 5%;margin-top: 20rpx;height: 300rpx;overflow: hidden;}
+.scroll{display: flex;flex-wrap: wrap;}
+.add_skill{width: 220rpx;height: 60rpx;border: 5rpx solid #6089F2;color: #6089F2;border-radius: 45rpx;text-align: center;line-height: 60rpx;font-size: 32rpx;font-weight: 600;margin-left: 35rpx;margin-bottom: 20rpx;}
+/* 底部按钮 */
+.bottom_but{width: 100%;height: 100rpx;display: flex;align-items: center;justify-content: space-around;position: fixed;bottom: 15rpx;background: white;}
+/* 底部分享按钮 */
+.right_but {height: 90rpx;width: 45%;line-height: 90rpx;text-align: center;background: #6089f2;border-radius: 15rpx;color: white;}
+/* 生成电子名片 */
+.left_but{height: 90rpx;width: 45%;line-height: 90rpx;text-align: center;background: #6089f2;border-radius: 15rpx;color: white;}
+
+/*弹框*/
+.black_overlay {position: fixed;top: 0;left:0;width: 100%;height: 100%;background-color:rgba(0, 0, 0, 0.5);z-index: 15} 
+/* 授权框 */
+.accreditBox{width: 550rpx;height: 460rpx;position: absolute;top: 50%;margin-top: -250rpx;left: 50%;margin-left: -270rpx;z-index: 666;background: #fff;border-radius: 25rpx;}
+.topBox{height: 360rpx;width:550rpx;margin-bottom: 3rpx}
+.btnBox{height: 100rpx;width:550rpx;}
+.textOne{height: 110rpx;text-align:center;line-height: 110rpx;font-size: 34rpx;}
+.imgBox{height: 120rpx;width: 100%;display: flex;justify-content: center;justify-items: center;}
+.iconImg{width: 120rpx;height: 120rpx;border-radius: 50%}
+.textTwo{width: 100%;height: 60rpx;text-align:center;line-height: 60rpx;font-size: 28rpx;}
+.textThree{width: 100%;height: 60rpx;text-align:center;line-height: 60rpx;font-size: 27rpx;color: #686868}
+
+.login-btn{width: 100%;height: 100rpx;margin: 0 auto;background: #6089f2;display: flex;justify-content: center;justify-items: center;color: #ffffff;font-size: 35rpx;border-bottom-left-radius: 25rpx;border-bottom-right-radius: 25rpx;border-top-right-radius: 0rpx;border-top-left-radius: 0rpx;}

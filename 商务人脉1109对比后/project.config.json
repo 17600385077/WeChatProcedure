@@ -1,0 +1,81 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.1.1",
+	"appid": "wx6bb89016584f6272",
+	"projectname": "0702",
+	"scripts": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "indexdaiscene",
+					"pathName": "pages/index/index",
+					"query": "scene=2:3"
+				},
+				{
+					"id": 1,
+					"name": "ceshiyixiala",
+					"pathName": "pages/index/index",
+					"query": "scene=1044",
+					"scene": "1044",
+					"shareInfo": {
+						"groupName": "测试模拟群6",
+						"shareName": "omJFk0dFc9pIqCMovTOzXprC_rmEYGWQNXFAmwSwWMA@cr4dev",
+						"shareKey": "6mAj5TVWbIxnB63o6rCIUsoWyNhxplw6cBV8ruz_fhuI80qLAJL04DHf5VKBYg9dUgUwYthq0AcogN-GFb6WzA~~"
+					}
+				},
+				{
+					"id": 2,
+					"name": "群进入",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": "1044",
+					"shareInfo": {
+						"groupName": "测试模拟群7",
+						"shareName": "omJFk0dFc9pIqCMovTOzXn7No9MAopATbdWPFh6I5vU@cr4dev",
+						"shareKey": "rOxU8n0RGtc_25t-OAwQGUjhG7lqtG-H0m8sYQrVy4Ok6SpbydFVbLKDfQw814Cw3B5nhL4ToSkeuuIgPESIUA~~"
+					}
+				},
+				{
+					"id": -1,
+					"name": "132",
+					"pathName": "pages/index/index",
+					"scene": "1044",
+					"shareInfo": {
+						"groupName": "测试模拟群7",
+						"shareName": "JSYrkySZyVWasuL_jQXuUeJK0VXXISste7Hq7GWKYz0@cr4dev",
+						"shareKey": "8mIQeMC-sP2TjyYtBHwIFEdUfKe3nam5yR8dv4lfsifOel7Li380a2tDRXrogOLGluqIaoLOhQH3LA7GuKX1Yw~~"
+					}
+				}
+			]
+		}
+	}
+}

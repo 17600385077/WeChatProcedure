@@ -1,0 +1,98 @@
+<view class='black_overlay' wx:if="{{outerState}}">
+  <!-- 授权框 -->
+  <view class='accreditBox' wx:if="{{accredit}}">
+    <view class='topBox'>
+      <view class='textOne'>商务人脉小程序请求授权</view>
+      <view class='imgBox'>
+        <image src='../../images/iconImg.png' class='iconImg'></image>
+      </view>
+      <view class='textTwo'>
+        商务人脉申请获得以下权限
+      </view>
+      <view class='textThree'>
+        获取你的公开信息（昵称、头像）
+      </view>
+    </view>
+    <view class='btnBox'>
+      <button class='btn-reset login-btn' open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo">登录授权</button>
+    </view>
+  </view>
+  <!-- 授权框 -->
+</view>
+<view>
+  <!-- 未填写信息 -->
+  <view hidden='{{no_write}}'>
+    <view class='top_title'>Hi~欢迎来到商务人脉</view>
+    <view class='write' bindtap='go_write'>
+      <view class='box'>
+        <view class='line_one'>
+          <view>请填写名片信息</view>
+          <image src='../../images/goAdd.png' style='height:50rpx;width:50rpx;'></image>
+        </view>
+        <view class='line_two'>认识更多商务伙伴~</view>
+        <view class='line_three'>———</view>
+      </view>
+    </view>
+  </view>
+  <!-- 已填写个人信息 -->
+  <view hidden='{{already_write}}'>
+    <view class='my_bg'></view>
+    <!-- 我的名片卡 -->
+    <view class='my_infor'>
+      <view class='card_box'>
+        <view class='my_img'>
+          <image src='{{my_img}}' style='width:120rpx;height:120rpx;border-radius: 50%;border:1rpx solid white;'></image>
+        </view>
+        <view class='my_data'>
+          <view>
+            <view style='font-weight: 600;font-size:35rpx;'>{{name}}</view>
+          </view>
+          <view>
+            <view>我的微信：{{wechat}}</view>
+            <view>所在公司：{{company_name}}</view>
+            <view>任职职位：{{take_office}}</view>
+            <view>所在城市：{{city}}</view>
+            <view style='height:auto;width:350rpx;'>我能够提供：{{info_provide}}</view>
+          </view>
+        </view>
+        <view class='compile'>
+          <image src='../../images/compile.png' style='width:100%;height:50rpx;' catchtap='go_change'></image>
+        </view>
+      </view>
+    </view>
+    <!-- 添加技能标签 -->
+    <view hidden='{{already_write}}' style='margin-top:130rpx;'>
+      <view class='skill_top'>
+        <view class='blue'></view>
+        <view>技能标签</view>
+      </view>
+      <view class='skill_box'>
+        <!-- 没有技能标签时候 -->
+        <scroll-view scroll-y style='height:100%;' hidden='{{go_add}}'>
+          <view class='scroll'>
+            <view class='add_skill' bindtap='go_add'>添加标签+</view>
+          </view>
+        </scroll-view>
+        <!-- 有技能标签时候 -->
+        <scroll-view scroll-y style='height:100%;' hidden='{{choosed_skill}}'>
+          <view class='scroll'>
+            <block wx:for='{{skill_list}}' wx:key=''>
+              <view class='add_skill' hidden="{{item.isSelected==1?false:true}}">{{item.skill_name}}</view>
+            </block>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <!-- 底部按钮 -->
+    <view class='bottom_but' hidden='{{already_write}}'>
+      <!-- 生成电子名片 -->
+      <button class='right_but' bindtap='go_card' data-id='{{id}}'>
+        我的电子名片
+      </button>
+      <!-- 底部转发按钮 -->
+      <button class='right_but' open-type='share'>
+        分享我的名片
+      </button>
+    </view>
+  </view>
+</view>

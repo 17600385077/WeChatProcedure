@@ -1,0 +1,10 @@
+/* pages/card/card.wxss */
+.grayBox{height: 15rpx;width: 100%;background: #f0f0f0}
+.public_box{height: auto;width: 100%;overflow: hidden;min-height: 100%;background: #ffffff;}
+.topBox{height: 100rpx;display: flex;justify-content: center;align-items: center;border-bottom: 1rpx #f1f0f5 solid}
+.topText{font-size: 32rpx;color: #505f74;}
+.centerBox{height: 1000rpx;background: #ffffff;}
+.imageBox{height: 900rpx;display: flex;justify-content: center;align-items: center;}
+.imageStyle{width: 489rpx;height: 870rpx;}
+.saveBox{height: 100rpx;display: flex;justify-content: center;align-items: center;}
+.saveText{font-size: 30rpx;color: #9a9a9a;}
